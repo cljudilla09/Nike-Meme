@@ -1,0 +1,737 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* background-color: #e52d2d; */
+    /* background-color: bisque; */
+}
+
+.hamburger-btn{
+    display: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: #ff3232;
+    border: transparent;
+    padding: 5px;
+}
+
+.hamburger-btn:hover{
+    background-color: #e52d2d;
+    color: white;
+}
+
+.header{
+    /* position: fixed;
+    top: 0; */
+    /* right: 0;
+    left: 0; */
+    /* bottom: 0; */
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    background-color: #ff3232;
+    height: 155px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}   
+
+.navbar-container{
+    background-color: white;
+    border-radius: 50px;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+}
+
+ul.nav-list{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul.nav-list .list{
+    list-style: none;
+}
+
+.list a{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:#e52d2d ;
+}
+
+.brand-name{
+    /* background-color: white; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.brand-name .header-logo-name .head-shoe{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    transform: rotate(0.1turn);
+}
+
+.search-field{
+    display: flex;
+    align-items: center;
+}
+
+.search-field .input-container{
+    z-index: 0;
+    width: 200px;
+}
+
+.search-field .fnd-btn{
+    z-index: 1;
+}
+
+.search-field input, .find-shoe-btn{
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}   
+
+.search-field .find-shoe-btn{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: #e52d2d;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.search-field .find-shoe-btn:hover, .list a:hover{
+    background-color: #e52d2d;
+    color: white;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+.list a:hover{
+
+    padding: 10px;
+    margin: 10px;
+}
+
+/* hero design */
+.hero-container{
+    height: 700px;
+    background-color: rgb(236, 228, 228);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.header-content{
+    /* border: solid 1px black; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header-content .naik-text {
+    margin: 0;
+    padding: 0;
+    font-size: 9rem;
+    letter-spacing: 30px;
+    color: #e52d2d;
+}
+
+.header-content p.text{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    color: #e52d2d;
+    font-family: sans-serif;
+}
+
+.header-content button.shop-now, .buy-now-btn, .snd-btn{
+    border-radius: 50px;
+    margin-top: 60px;
+    padding: 20px;
+    border: none;
+    background-color: #e52d2d;
+    color: white;
+    font-size: 1.5rem;
+    width: 40%;
+}
+
+.header-content button.shop-now:hover, .buy-now-btn:hover, .form button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* .header-image{ 
+    width: 40%;
+    margin: 0;
+    padding: 0;
+} */
+
+.image-circle{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-circle img{
+    mix-blend-mode: darken;
+}
+
+/* sale */
+
+.header-sale{
+    text-align: center;
+}
+
+.h1-heading, .sub-heading{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    color: #e52d2d;
+}
+
+.sub-heading{
+    font-size: 2rem;
+}
+
+/* .sale{
+    display: flex;
+    flex-direction: column;
+} */
+
+.container-sale{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buy-now-btn{
+    font-size: 1.5rem;
+    width: 50%;
+    align-self: center;
+}
+
+.products{
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.products img{
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
+    /* margin: 0; */
+    padding: 0;
+}
+
+.prod-text{
+    align-self: center;
+    /* border: solid 1px orange; */
+    width: 60%;
+    font-size: 1.2rem;
+    color: gray;
+    font-family: sans-serif;
+}
+
+/* contact-us */
+
+.contact-us{
+    margin-top: 20px;
+    background-color: rgb(236, 228, 228);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.snd-btn{
+    width: 10%;
+}
+
+.contact-us-container, .get-in-touch{
+    position: absolute;
+}
+
+.contact-us-container{
+    z-index: 1;
+    height: 400px;
+    width: 350px;
+    background-color: #e52d2d;
+    color: white;
+    border-radius: 20px 0px 20px 0px;
+    /* left: 450px; */
+    left: 25%;
+}
+
+.contact-us-container .contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.contact-us-container .h2-header{
+    padding: 2px;
+    text-align: center;
+}
+
+.contact-us-container .contact-info p{
+    width: 150px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-us-container .contact-info a{
+   text-decoration: none;
+   color: white;
+}
+
+.contact-us-container .contact-info a:hover{
+   text-decoration: none;
+   color: rgb(157, 157, 231);
+}
+
+.get-in-touch{
+    background-color: white;
+    height: 500px;
+    width: 800px;
+    color: #e52d2d;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+.h2-header-git{
+    font-size: 2.5rem;
+    padding-top: 40px;
+    margin: 0;
+}
+
+.get-in-touch p{
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+
+.h2-header-git, .get-in-touch p, .get-in-touch .form{
+    position: relative;
+    left: 100px;
+}
+
+.get-in-touch .form{
+    width: 80%;
+    /* border: solid 1px green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.form input{
+    width: 50%;
+    margin: 20px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: gray;
+    text-align: center;
+}
+
+.form button{
+    margin: 0;
+    font-size: 1rem;
+    width: 20%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* responsiveness */
+
+@media (max-width: 1700px) and (min-width: 1500px) {
+
+    .contact-us-container{
+        left: 20%;
+    }
+
+    .header-content{
+        width: 30%;
+    }
+
+    .header-content button.shop-now{
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 1499px) and (min-width: 1150px) {
+
+    .contact-us-container{
+        left: 10%; 
+    }
+
+    .header-content{
+        width: 20%;
+        padding: 30px;
+    }
+
+    .image-circle img{
+        height: 300px;
+        width: 90%;
+    }
+
+    .header-content {
+        height: 350px;
+    }
+
+    .header-content .naik-text {
+        font-size: 5rem;
+        display: block;
+    }
+
+    .header-content p.text {
+        font-size: 1.5rem;
+    }
+
+    .header-content button.shop-now{
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .buy-now-btn{
+        width: 40%;
+        font-size: 1rem;
+    }
+
+    .prod-text{
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .products img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .hero-container{
+        height: 400px;
+    }   
+
+    .list a{
+        font-size: 1rem;
+    }
+
+    ul.nav-list{
+        margin: 5px;
+    }
+
+    .navbar-container{
+        width: 300px;
+    }
+
+    .contact-us-container{
+        left: 20%;
+        width: 300px;
+    }
+
+    .contact-us-container .contact-info p{
+        width: 100px;
+        padding: 0px 0px 5px 15px;
+        font-size: 1rem;
+    }
+
+    .get-in-touch{
+        height: 500px;
+        width: 600px;
+    }
+
+    .form .snd-btn{
+        width: 200px;
+    }
+
+    .header{
+        justify-content: space-evenly;
+    }   
+
+    .search-field input, .find-shoe-btn{
+        width: 200px;
+        height: 50px;
+    }  
+        
+    .search-field .input-container{
+        width: 160px;
+    }
+    
+}
+
+@media (max-width: 1149px) and (min-width: 576px) {
+    .navbar-container, .search-field{
+        display: none;
+    }
+
+    .header{
+        justify-content: space-around;
+    }   
+    
+    .hamburger-btn{
+        display: block;
+    }
+
+    .hero-container{
+        position: relative;
+    }
+
+    .header-content{
+        /* display: none; */
+        display: flex;
+        flex-direction: row;
+        /* width: 100%; */
+        /* border: solid 1px black; */
+        position: absolute;
+        /* margin: 0;
+        padding: 0; */
+        width: 60%;
+    }
+
+    .header-content .naik-text{
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+    }
+
+    .header-content p.text{
+        font-size: .7rem;
+        width: 100%;
+        font-style: italic;
+    }   
+
+    .header-content button.shop-now{
+        width: 400px;
+        font-size: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .h1-heading{
+        font-size: 2rem;
+    }
+
+    .sub-heading{
+        font-size: 1.5rem;
+    }
+
+    .container-sale{
+        /* display: flex; */
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .buy-now-btn{
+        font-size: 1.5rem;
+        width: 50%;
+        align-self: center;
+    }
+
+    .expensive-shoe{
+        width: 100%;
+    }
+
+    .products img{
+        margin-left: auto; 
+        margin-right: auto;
+        width: 50%;
+        /* padding-top: 50px; */
+    } 
+
+    .buy-now-btn{
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .get-in-touch{
+        height: 500px;
+        width: 100%;
+    }
+
+    .h2-header-git, .get-in-touch p, .get-in-touch .form {
+        left: 0;
+    }
+    
+    .contact-us-container, .get-in-touch{
+        position: relative;
+        /* display: flex; */
+    }
+
+    .contact-us-container{
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-content : center;
+        width: 100%;
+    }
+
+    .contact-us-container .h2-header{
+        grid-column: span 4;
+    }
+
+    .contact-info{
+        grid-column: span 2;
+    }
+
+    .contact-info p a{
+        font-size: 1.1rem;
+    }
+
+    .contact-us{
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+}
+
+@media (max-width: 575px) and (min-width: 300px){
+    .navbar-container, .search-field{
+        display: none;
+    }
+
+    .header{
+        justify-content: space-around;
+        width: 100%;
+    }   
+
+      .hamburger-btn{
+        display: block;
+    }
+
+    .hero-container{
+        position: relative;
+    }
+
+    /* needs to be edited */
+    .expensive-shoe{ 
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-sale{
+        /* display: flex; */
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .header-content{
+        /* display: none; */
+        display: flex;
+        flex-direction: row;
+        /* width: 100%; */
+        /* border: solid 1px black; */
+        position: absolute;
+        /* margin: 0;
+        padding: 0; */
+        width: 95%;
+    }
+
+    .header-content .naik-text{
+        font-size: 3rem;
+        letter-spacing: 10px;
+    }
+
+
+    .header-content p.text{
+        font-size: 1rem;
+        width: 100%;
+        font-style: italic;
+    }   
+
+    .header-content button.shop-now{
+        width: 300px;
+        font-size: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .buy-now-btn{
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .get-in-touch{
+        height: 500px;
+        width: 100%;
+    }
+
+    .h2-header-git, .get-in-touch p, .get-in-touch .form {
+        left: 0;
+    }
+    
+    .contact-us-container, .get-in-touch{
+        position: relative;
+        /* display: flex; */
+    }
+
+    .contact-us-container{
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-content : center;
+        width: 100%;
+    }
+
+    .contact-us-container .h2-header{
+        grid-column: span 4;
+    }
+
+    .contact-info{
+        grid-column: span 2;
+    }
+
+    .contact-info p a{
+        font-size: 1.1rem;
+    }
+
+    .contact-us{
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .form .snd-btn{
+        width: 200px;
+    }
+
+    .form input{
+        width: 90%;
+    }
+
+}
